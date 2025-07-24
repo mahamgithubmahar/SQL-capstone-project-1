@@ -1,0 +1,19 @@
+CREATE TABLE IF NOT EXISTS EMPLOYEES (
+    EmployeeID VARCHAR PRIMARY KEY,
+    FirstName TEXT,
+    LastName TEXT,
+    JobTitle TEXT,
+    Salary INT
+);
+
+INSERT INTO EMPLOYEES (EmployeeID, FirstName, LastName, JobTitle, Salary) VALUES
+(1, 'Harsh', 'Sharma', 'Software Engineer', 75000.00),
+(2, 'Anjali', 'Mehta','Data Analyst', 67000.00),
+(3, 'Ravi', 'Kumar', 'Project Manager', 90000.00),
+(4, 'Sneha', 'Patel', 'Electrical Designer', 62000.00),
+(5, 'Amit', 'Verma', 'Mechanical Engineer', 58000.00);
+
+SELECT * FROM EMPLOYEES;
+SELECT SUM(Salary) AS Total_Salary_Expenditure FROM EMPLOYEES;
+SELECT AVG(Salary) AS Average_Salary FROM EMPLOYEES;
+SELECT MAX(Salary) AS Highest_Salary, MIN(Salary) AS Lowest_Salary FROM EMPLOYEES;
